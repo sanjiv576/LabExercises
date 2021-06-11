@@ -8,22 +8,26 @@ In the first test there are three groups. The first group has 20 students and th
 The second group has 21 students, so they can get by with no fewer than 11 desks. 11 desks are also enough for the third group of 22 students. So, we need 32 desks in total.
 '''
 
-a = int(input("Enter total number of student in Class 1 : "))
-b = int(input("Enter total number of student in Class 2 : "))
-c = int(input("Enter total number of students in Class 3 : "))
+student_class1 = int(input("Enter total number of student in the first class  : "))
+student_class2 = int(input("Enter total number of student in the second class  : "))
+student_class3 = int(input("Enter total number of students in the third class  : "))
 
-need1 = a//2
-remind1 = a%2
+need1 = student_class1//2
+remind1 = student_class1%2
 require1 = need1+remind1
 
-need2 = b//2
-remind2 = b%2
+need2 = student_class2//2
+remind2 = student_class2%2
 require2 = need2+remind2
 
-need3 = c//2
-remind3 = c%2
+need3 = student_class3//2
+remind3 = student_class3%2
 require3 = need3+remind3
 
-print(f"Required number of desks in class 1 is : {require1}")
-print(f"Required number of desks in class 2 is : {require2}")
-print(f"Required number of desks in class 3 is : {require3}")
+total_desks = require1+require2+require3
+print()
+print(f"Required number of desks in the first class  is : {require1}")
+print(f"Required number of desks in the second class  is : {require2}")
+print(f"Required number of desks in the third class  is : {require3}")
+print()
+print(f"Total desks required is : {total_desks}")
