@@ -2,9 +2,9 @@
   Price of a house is $1M. If buyer has good credit, they need to put down 10% otherwise
    they need to put down 20%.
   Print the down payment.
-"""
+
 price = 1000000
-credit = input("Enter credit condition of the buyer either good or bad : ")
+credit = input("Enter credit condition of the buyer either good or bad : ").lower()
 
 if credit == "good":
     pay1 = 0.1 * price
@@ -14,3 +14,11 @@ elif credit == "bad":
     print(f"Down payment payment is : {pay2}")
 else:
     print("Invalid ! Type again.")
+"""
+price = 100000
+credit = True
+if credit:
+    downPayment = 0.1 * price
+else:
+    credit = 0.2 * price
+print(f"Your down payment is ${downPayment}")
