@@ -6,7 +6,7 @@ upper case letters and lower case letters.
 
 def string(name):
     """
-    This module accepts a string and shows total number upper case and lower case used.
+    This module accepts a string and shows total number uppercase and lowercase used.
     :param name: string
     :return: integer
     """
@@ -14,7 +14,7 @@ def string(name):
     lower = 0
     space = 0
     for i in name:
-        a = ord(i)  # ord() gives ASCI
+        a = ord(i)  # ord() gives ASCI of characters
         if a == 32:  # for space
             space += 1
         if a >= 65 and a <= 90:  # 65-90 for Upper case
