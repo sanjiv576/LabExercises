@@ -1,8 +1,8 @@
 # Write a Python function that takes a number as a parameter and check the number is prime or not.
 def prime(num):
     """This module inputs a number and checks whether it is prime number or not.
-    :param num:
-    :return:
+    :param num: integer
+    :return: message print - string
     """
     checker = 0
     for i in range(1,num+1):
@@ -13,5 +13,11 @@ def prime(num):
     else:
         print(f"{num} is not a prime number.")
 
+
 num = int(input("Enter any positive real number : "))
-prime(num)
+if num == 1:
+    print(f"{num} is prime number.")
+elif num == 0:
+    print(f"{num} is zero")
+else:
+    prime(num)

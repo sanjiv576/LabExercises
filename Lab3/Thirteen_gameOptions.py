@@ -18,19 +18,21 @@
         > quit
 '''
 while True:
-    options = input("Type help/start/stop/quit : ")
+    options = input("Type help/start/stop/quit : ").lower()
     if options == "start":
         print("Car started .... Ready to go !")
-        options1 = input("Type help/start/stop/quit : ")
+        options1 = input("Type help/start/stop/quit : ").lower()
         if options1 == "start":
             print("Car had already started !!")
+        else:
+            pass
     elif options == "help":
         print("start - to start the car")
         print("stop - to stop the car")
         print("quit - to exit")
     elif options == "stop":
         print("Car stopped ..")
-        options1 = input("Type help/start/stop/quit : ")
+        options1 = input("Type help/start/stop/quit : ").lower()
         if options1 == "stop":
             print("Car had already stopped !!")
     elif options == "quit":
